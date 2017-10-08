@@ -98,3 +98,9 @@ MR_USE_MROM_FSTAB := true
 MR_CONTINUOUS_FB_UPDATE := true
 MR_NO_KEXEC := enabled
 TARGET_RECOVERY_IS_MULTIROM := true
+
+# Versioning
+MR_DEVICE_SPECIFIC_VERSION := e
+include $(LOCAL_PATH)/multirom/MR_REC_VERSION.mk
+BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)
+MR_REC_VERSION := $(shell date -u +%Y%m%d)-01
