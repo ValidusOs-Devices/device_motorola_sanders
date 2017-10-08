@@ -15,10 +15,10 @@
 #
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/tipsy/config/gsm.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common Tipsy stuff.
+$(call inherit-product, vendor/tipsy/config/common.mk)
 
 # Inherit Telephony packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := omni_sanders
+PRODUCT_NAME := tipsy_sanders
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := G5S plus
 PRODUCT_MANUFACTURER := Motorola
