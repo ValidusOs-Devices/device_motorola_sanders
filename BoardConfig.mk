@@ -41,10 +41,11 @@ BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_CUSTOM_DTBTOOL := dtbTool_custom
-BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
+TARGET_CUSTOM_DTBTOOL := dtbTool_moto
 TARGET_KERNEL_ARCH := arm
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 TARGET_KERNEL_CONFIG := sanders_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 
