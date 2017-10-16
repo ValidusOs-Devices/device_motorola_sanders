@@ -70,6 +70,7 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_THEME_LANDSCAPE := landscape_hdpi
 TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -98,6 +99,8 @@ MR_USE_MROM_FSTAB := true
 MR_CONTINUOUS_FB_UPDATE := true
 MR_NO_KEXEC := enabled
 TARGET_RECOVERY_IS_MULTIROM := true
+MR_DEVICE_VARIANTS := sanders
+MR_ENCRYPTION := true
 
 # Versioning
 MR_DEVICE_SPECIFIC_VERSION := e
