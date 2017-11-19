@@ -22,7 +22,7 @@ $(call inherit-product, vendor/tipsy/config/common.mk)
 
 # Inherit Telephony packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, device/motorola/sanders/core_32_64_bit.mk)
 
 # Inherit language packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
