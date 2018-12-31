@@ -354,3 +354,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.always_send_plmn=true \
     persist.rcs.supported=1 \
     persist.dbg.ims_volte_enable=1
+
+#WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    vendor.video.disable.ubwc=1
