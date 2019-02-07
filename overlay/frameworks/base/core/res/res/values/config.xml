@@ -406,6 +406,9 @@
     <!-- Names of the key handler classes -->
     <string name="config_deviceKeyHandlerClass" translatable="false">com.moto.actions.KeyHandler</string>
 
+    <!-- Should the pinner service pin the Home application? -->
+    <bool name="config_pinnerHomeApp">true</bool>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
